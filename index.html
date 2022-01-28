@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -19,9 +21,61 @@
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline **text-clifford**">
-        Hello world!
-    </h1>
+    <header class="bg-[#87509c]">
+        <section class="container mx-auto">
+            <section class="flex flex-col lg:flex-row md:flex-row lg:items-center md:items-center pt-5">
+                <!-- logo section -->
+                <div class="nav__brand flex justify-center">
+                    <a href="#" class="flex justify-center">
+                        <img class="lg:w-1/2 md:w-1/2 w-1/4" src="images/icons/logo@3x.png" alt="logo">
+                    </a>
+                </div>
+                <!-- menu section -->
+                <nav class="menu__bar lg:ml-auto md:ml-auto lg:w-1/3 md:w-1/2">
+                    <ul class="flex lg:justify-between md:flex md:justify-between justify-center">
+                        <li
+                            class="text-white py-2 px-4 hover:bg-[#643a79] hover:rounded-md transition-all duration-200">
+                            <a href="#">Home</a>
+                        </li>
+                        <li
+                            class="text-white py-2 px-4 hover:bg-[#643a79] hover:rounded-md transition-all duration-200">
+                            <a href="#">About</a>
+                        </li>
+                        <li
+                            class="text-white py-2 px-4 hover:bg-[#643a79] hover:rounded-md transition-all duration-200">
+                            <a href="#">Work</a>
+                        </li>
+                        <li
+                            class="text-white py-2 px-4 hover:bg-[#643a79] hover:rounded-md transition-all duration-200">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li
+                            class="text-white py-2 px-4 hover:bg-[#643a79] hover:rounded-md transition-all duration-200">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- header intro -->
+            <section class="cuda__intro flex flex-col items-center py-40">
+                <section class="cuda__intro__title">
+                    <h3 class="text-white text-center lg:text-2xl md:text-2xl">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br>
+                        Neque quibusdam voluptas omnis nam aut
+                        minima facere dolor expedita, quod a?
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <br>
+                        Maiores odit velit alias suscipit iusto reiciendis?
+                    </h3>
+                </section>
+                <section class="cuda__intro__btn mt-5">
+                    <button class="uppercase text-white px-3 py-2 font-bold bg-[#eb7d4b] rounded-sm hover:bg-[#c86a40] hover:rounded-sm transition-all duration-200" type="submit">Working with us</button>
+                </section>
+            </section>
+        </section>
+    </header>
 </body>
 
 </html>
